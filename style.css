@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.container{
+    
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("./ass/serene-dessert-landscape-clear-blue-sky_1308-160408.avif"); */
+
+}
+img{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    
+
+}
+.calculator{
+    z-index: 1;
+    background:rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width:60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(228, 228, 228, 0.268),5px 5px 15px rgba(255, 255, 255, 0.06);
+    background: transparent;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+form input.operator{
+    color: rgb(18, 176, 123);
+    font-weight: bold;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;
+}
+
